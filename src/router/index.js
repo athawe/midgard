@@ -8,7 +8,7 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
   },
   {
     path: "/about",
@@ -17,12 +17,25 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
+  {
+    path: "/aluraFacebook",
+    beforeEnter() {
+      location.href = "https://www.facebook.com/AluraLarp/";
+    },
+  },
+  // {
+  //   path: "/menu",
+  //   name: "Menu",
+  //   component: () => import("../views/Menu.vue"),
+  // }
 ];
 
 const router = new VueRouter({
-  routes
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes,
 });
 
 export default router;

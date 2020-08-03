@@ -1,13 +1,14 @@
 <template>
   <v-container class="footerStyle" fluid>
     <v-row justify="center" no-gutters>
-      <v-col cols="12" v-if="$vuetify.breakpoint.mobile">
+      <!-- <v-col cols="12" v-if="$vuetify.breakpoint.mobile">
         <v-bottom-navigation
-          shift
           class="flex"
           value="value"
           active.sync="value"
           color="primary"
+          dark
+          grow
         >
           <v-btn dark>
             <span>Sign Up</span>
@@ -18,9 +19,9 @@
             <v-icon>icon</v-icon>
           </v-btn>
         </v-bottom-navigation>
-      </v-col>
+      </v-col> -->
       <v-col cols="0" md="1" />
-      <v-col cols="6" md="2" v-if="!$vuetify.breakpoint.mobile">
+      <v-col cols="6" md="2">
         <v-container>
           <v-row class="headline text-right">
             <v-col cols="12" class="pb-0">
@@ -32,10 +33,10 @@
           </v-row>
         </v-container>
       </v-col>
-      <v-col cols="6" md="2" v-if="!$vuetify.breakpoint.mobile">
+      <v-col cols="6" md="2">
         <v-container>
           <v-row class="white--text">
-            <v-col class="white--text font-italic pb-0" cols="12">
+            <v-col class="white--text font-italic pb-0 ml-1" cols="12">
               Alura LARP
             </v-col>
             <v-col cols="12">
@@ -70,10 +71,10 @@
           </v-row>
         </v-container>
       </v-col>
-      <v-col cols="6" md="2" v-if="!$vuetify.breakpoint.mobile">
+      <v-col cols="6" md="2">
         <v-container>
           <v-row class="white--text">
-            <v-col class="white--text font-italic pb-0" cols="12">
+            <v-col class="white--text font-italic pb-0 ml-1" cols="12">
               Midgard
             </v-col>
             <v-col cols="12">
@@ -98,10 +99,10 @@
           </v-row>
         </v-container>
       </v-col>
-      <v-col cols="6" md="2" v-if="!$vuetify.breakpoint.mobile">
+      <v-col cols="6" md="2">
         <v-container>
           <v-row class="white--text">
-            <v-col class="white--text font-italic pb-0" cols="12">
+            <v-col class="white--text font-italic pb-0 ml-1" cols="12">
               Contact
             </v-col>
             <v-col cols="12">
@@ -126,7 +127,7 @@
           </v-row>
         </v-container>
       </v-col>
-      <v-col cols="6" md="2" v-if="!$vuetify.breakpoint.mobile">
+      <v-col cols="12" md="2">
         <v-row class="white--text text-center fill-height" align-content="end">
           <v-col class="text-right">
             <a

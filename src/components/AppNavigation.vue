@@ -34,7 +34,7 @@
             <v-list-item-title>Our Story</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="/forum">
           <v-list-item-action>
             <v-icon>mdi-message-text</v-icon>
           </v-list-item-action>
@@ -44,7 +44,7 @@
             </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/about">
+        <v-list-item link to="/wiki">
           <v-list-item-action>
             <v-icon>mdi-information-outline</v-icon>
           </v-list-item-action>
@@ -52,7 +52,7 @@
             <v-list-item-title>Wiki</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/about">
+        <v-list-item link to="/media">
           <v-list-item-action>
             <v-icon>mdi-information-outline</v-icon>
           </v-list-item-action>
@@ -60,7 +60,7 @@
             <v-list-item-title>Media</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link to="/about">
+        <v-list-item link to="/login">
           <v-list-item-action>
             <v-icon>mdi-information-outline</v-icon>
           </v-list-item-action>

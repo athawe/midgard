@@ -25,11 +25,26 @@ const routes = [
       location.href = "https://www.facebook.com/AluraLarp/";
     },
   },
-  // {
-  //   path: "/menu",
-  //   name: "Menu",
-  //   component: () => import("../views/Menu.vue"),
-  // }
+  {
+    path: "/forum",
+    name: "Forum",
+    component: () => import("../views/Forum.vue"),
+  },
+  {
+    path: "/media",
+    name: "Media",
+    component: () => import("../views/Media.vue"),
+  },
+  {
+    path: "/wiki",
+    name: "Wiki",
+    component: () => import("../views/Wiki.vue"),
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/AccountAccess.vue"),
+  },
 ];
 
 const router = new VueRouter({
